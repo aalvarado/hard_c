@@ -1,0 +1,50 @@
+
+FPUTS(3)		 BSD Library Functions Manual		      FPUTS(3)
+
+NAME
+     fputs, puts -- output a line to a stream
+
+LIBRARY
+     Standard C Library (libc, -lc)
+
+SYNOPSIS
+     #include <stdio.h>
+
+     int
+     fputs(const char *restrict s, FILE *restrict stream);
+
+     int
+     puts(const char *s);
+
+DESCRIPTION
+     The function fputs() writes the string pointed to by s to the stream
+     pointed to by stream.
+
+     The function puts() writes the string s, and a terminating newline char-
+     acter, to the stream stdout.
+
+RETURN VALUES
+     The functions fputs() and puts() return a nonnegative integer on success
+     and EOF on error.
+
+ERRORS
+     [EBADF]		The stream argument is not a writable stream.
+
+     The functions fputs() and puts() may also fail and set errno for any of
+     the errors specified for the routines write(2).
+
+COMPATIBILITY
+     fputs() now returns a non-negative number (as opposed to 0) on successful
+     completion.  As a result, many tests (e.g., "fputs() == 0", "fputs() !=
+     0") do not give the desired result.  Use "fputs() != EOF" or "fputs() ==
+     EOF" to determine success or failure.
+
+SEE ALSO
+     ferror(3), fputws(3), putc(3), stdio(3)
+
+STANDARDS
+     The functions fputs() and puts() conform to ISO/IEC 9899:1990
+     (``ISO C90'').  While not mentioned in the standard, both fputs() and
+     puts() print `(null)' if str is NULL.
+
+BSD				 June 4, 1993				   BSD
