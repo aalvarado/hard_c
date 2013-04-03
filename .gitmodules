@@ -1,9 +1,3 @@
-[submodule "fswatch"]
-	path = fswatch
-	url = https://github.com/aalvarado/fswatch
-[submodule "isyf"]
-	path = isyf
-	url = https://github.com/schoentoon/isyf
 [submodule "linenoise"]
 	path = linenoise
 	url = https://github.com/antirez/linenoise
