@@ -16,8 +16,8 @@ int main(int argc, char const *argv[])
 	printf("I have a first name %s\n", first_name);
 	printf("I have a last name %s \n", last_name);
 
-	// breaking it
-	/*printf("My whole name is %s %c. %s\n", first_name, initial, last_name);*/
-	printf("My whole name is %s %c. %s\n", initial, first_name,  last_name);
+	// fixing the break
+	/*printf("My whole name is %s %c. %s\n", initial, first_name,  last_name);*/
+	printf("My whole name is %s %c. %s\n", first_name, initial, last_name);
 	return 0;
 }
