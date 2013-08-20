@@ -8,6 +8,7 @@ int main(int argc, char const *argv[])
 	char initial = 'A';
 	char first_name[] = "Adan";
 	char last_name[] = "Alvarado";
+	int *pdistance = &(distance);
 
 	printf("Your are %d miles away \n", distance);
 	printf("you have %f levels of power\n", power);
@@ -19,5 +20,7 @@ int main(int argc, char const *argv[])
 	// fixing the break
 	/*printf("My whole name is %s %c. %s\n", initial, first_name,  last_name);*/
 	printf("My whole name is %s %c. %s\n", first_name, initial, last_name);
+	printf("memaddress %p \n", pdistance);
+	printf("pointer to int %d \n", *(pdistance));
 	return 0;
 }
