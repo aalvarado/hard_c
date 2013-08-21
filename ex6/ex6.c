@@ -22,5 +22,8 @@ int main(int argc, char const *argv[])
 	printf("My whole name is %s %c. %s\n", first_name, initial, last_name);
 	printf("memaddress %p \n", pdistance);
 	printf("pointer to int %d \n", *(pdistance));
+
+	// following code produces a warning
+	// printf("");
 	return 0;
 }
