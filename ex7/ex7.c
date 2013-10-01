@@ -21,5 +21,11 @@ int main(int argc, char const *argv[])
 	int care_percentage = bugs * nul_byte;
 	printf("Which means you should care %d%%\n", care_percentage);
 
+
+	char nul_byte2 = '\0';
+
+	// In C, chars are integers
+	printf("Which means you should care %d%%\n", nul_byte2);
+
 	return 0;
 }
